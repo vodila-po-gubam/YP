@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zatup</title>
+    <link rel="stylesheet" href="css\shorts.css">
+    <link rel="icon" href="img\logos\logo.png">
+    <meta http-equiv="refresh" content="3">
 </head>
 <body>
-    
+    <!-- Шапка -->
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo"><img src="img\logos\logo.png"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+            <button>🔎</button>
+        </div>
+        <div class="header-right">
+            <button class="create-btn">+ Создать</button>
+            <a href="#" class="user-avatar"><img src="img\logos\acc.png"></a>
+        </div>
+    </header>
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+        <nav class="main-menu">
+            <div class="menu-section">
+                <a href="index.html" class="active"><img src="img\sidebaer\glavn.png" alt=""> Главная</a>
+                <a href="shorts.html"><img src="img\sidebaer\sh.png" alt=""> Shorts</a>
+                <a href="#"><img src="img\sidebaer\podpiski.png" alt=""> Подписки</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Вы ></h4>
+                <a href="#"><img src="img\sidebaer\hist.png" alt=""> История</a>
+                <a href="#"><img src="img\sidebaer\playlist.png" alt=""> Плейлисты</a>
+                <a href="#"><img src="img\sidebaer\vashi video.png" alt=""> Ваши видео</a>
+                <a href="#"><img src="img\sidebaer\pozje.png" alt=""> Смотреть позже</a>
+                <a href="#"><img src="img\sidebaer\liked.png" alt=""> Понравившиеся</a>
+                <a href="#"><img src="img\sidebaer\yourclips.png" alt=""> Ваши клипы</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Подписки</h4>
+                <a href="#"><img src="img\sidebaer\wolf.png" alt=""> Happy Wolf!</a>
+                <a href="#"><img src="img\sidebaer\exile.png" alt=""> ExileShow</a>
+                <a href="#"><img src="img\sidebaer\guzno.png" alt=""> GUZNO</a>
+                <a href="#"><img src="img\sidebaer\vova.png" alt=""> Красюков Вова</a>
+                <a href="#"><img src="img\sidebaer\pala4.png" alt=""> PALA4</a>
+                <a href="#"><img src="img\sidebaer\nn.png" alt="">Konstantin Andreev</a>
+                <a href="#"><img src="img\sidebaer\nn.png" alt=""> Kwin</a>
+
+                   <!-- Скрытые каналы -->
+                <div class="hidden-channels">
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Stint</a>
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Satir</a>
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Itpedia</a>
+                </div>
+
+                <a href="#" class="show-more">▼Развернуть</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Навигатор</h4>
+                <a href="#"><img src="img\sidebaer\trend.png" alt=""> В тренде</a>
+                <a href="#"><img src="img\sidebaer\muz.png" alt=""> Музыка</a>
+                <a href="#"><img src="img\sidebaer\films.png" alt=""> Фильмы</a>
+                <a href="#"><img src="img\sidebaer\strims.png" alt=""> Трансляции</a>
+                <a href="#"><img src="img\sidebaer\gameds.png" alt=""> Видеоигры</a>
+                <a href="#"><img src="img\sidebaer\sport.png" alt=""> Спорт</a>
+            </div>
+
+            <div class="menu-section">
+                <a href=""><img src="img\sidebaer\settings.png">Настройки</a>
+            </div>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="#">О сервисе</a>
+            <a href="#">Конфиденциальность</a>
+            <p>© 2025 Zatup</p>
+        </div>
+    </aside>
+    <!--Основной контент-->
+    <main>
+       <div class="shorts-container">
+        <!-- Видео 1 -->
+        <div class="short-video" id="short1">
+            <video controls autoplay muted loop>
+                <source src="videos\sh2.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h3>Гайд от бородатого</h3>
+                <p>@Бородатый</p>
+                <p>1,8 млн. просмотров</p>
+            </div>
+            <a href="#short2" class="next-btn">›</a>
+        </div>
+
+        <!-- Видео 2 -->
+        <div class="short-video" id="short2">
+            <video controls autoplay muted loop>
+                <source src="videos\sh2.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h3>Assassins creed 3</h3>
+                <p>@GamerPro</p>
+                <p>3,2 млн просмотров</p>
+            </div>
+            <a href="#short1" class="prev-btn">‹</a>
+            <a href="#short3" class="next-btn">›</a>
+        </div>
+
+        <!-- Видео 3 -->
+        <div class="short-video" id="short3">
+            <video controls autoplay muted loop>
+                <source src="videos\sh2.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <h3>Far cry 3</h3>
+                <p>@GameLover</p>
+                <p>2,1 млн просмотров</p>
+            </div>
+            <a href="#short2" class="prev-btn">‹</a>
+        </div>
+    </div>
+    </main>
 </body>
 </html>
