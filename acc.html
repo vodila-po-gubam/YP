@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zatup</title>
+    <link rel="stylesheet" href="css\acc.css">
+    <link rel="icon" href="img\logos\logo.png">
 </head>
 <body>
-    
+    <!-- Шапка -->
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo"><img src="img\logos\logo.png"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+            <button>🔎</button>
+        </div>
+        <div class="header-right">
+            <button class="create-btn">+ Создать</button>
+            <a href="acc.html" class="user-avatar"><img src="img\logos\acc.png"></a>
+        </div>
+    </header>
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+        <nav class="main-menu">
+            <div class="menu-section">
+                <a href="index.html" class="active"><img src="img\sidebaer\glavn.png" alt=""> Главная</a>
+                <a href="shorts.html"><img src="img\sidebaer\sh.png" alt=""> Shorts</a>
+                <a href="#"><img src="img\sidebaer\podpiski.png" alt=""> Подписки</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Вы ></h4>
+                <a href="#"><img src="img\sidebaer\hist.png" alt=""> История</a>
+                <a href="#"><img src="img\sidebaer\playlist.png" alt=""> Плейлисты</a>
+                <a href="#"><img src="img\sidebaer\vashi video.png" alt=""> Ваши видео</a>
+                <a href="#"><img src="img\sidebaer\pozje.png" alt=""> Смотреть позже</a>
+                <a href="#"><img src="img\sidebaer\liked.png" alt=""> Понравившиеся</a>
+                <a href="#"><img src="img\sidebaer\yourclips.png" alt=""> Ваши клипы</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Подписки</h4>
+                <a href="#"><img src="img\sidebaer\wolf.png" alt=""> Happy Wolf!</a>
+                <a href="#"><img src="img\sidebaer\exile.png" alt=""> ExileShow</a>
+                <a href="#"><img src="img\sidebaer\guzno.png" alt=""> GUZNO</a>
+                <a href="#"><img src="img\sidebaer\vova.png" alt=""> Красюков Вова</a>
+                <a href="#"><img src="img\sidebaer\pala4.png" alt=""> PALA4</a>
+                <a href="#"><img src="img\sidebaer\nn.png" alt="">Konstantin Andreev</a>
+                <a href="#"><img src="img\sidebaer\nn.png" alt=""> Kwin</a>
+
+                   <!-- Скрытые каналы -->
+                <div class="hidden-channels">
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Stint</a>
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Satir</a>
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Itpedia</a>
+                </div>
+
+                <a href="#" class="show-more">▼Развернуть</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Навигатор</h4>
+                <a href="#"><img src="img\sidebaer\trend.png" alt=""> В тренде</a>
+                <a href="#"><img src="img\sidebaer\muz.png" alt=""> Музыка</a>
+                <a href="#"><img src="img\sidebaer\films.png" alt=""> Фильмы</a>
+                <a href="#"><img src="img\sidebaer\strims.png" alt=""> Трансляции</a>
+                <a href="#"><img src="img\sidebaer\gameds.png" alt=""> Видеоигры</a>
+                <a href="#"><img src="img\sidebaer\sport.png" alt=""> Спорт</a>
+            </div>
+
+            <div class="menu-section">
+                <a href=""><img src="img\sidebaer\settings.png">Настройки</a>
+            </div>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="#">О сервисе</a>
+            <a href="#">Конфиденциальность</a>
+            <p>© 2025 Zatup</p>
+        </div>
+    </aside>
+    <!--Основной контент-->
+    <main class="account-page">
+    <!-- Шапка профиля -->
+    <div class="account-header">
+        <div class="channel-banner"></div>
+        <div class="channel-info">
+            <div class="channel-left">
+                <img src="img/logos/acc.png" class="channel-avatar">
+                <div>
+                    <h1>HANSON</h1>
+                    <p>@HANSON • 150K подписчиков • 1 видео</p>
+                    <div class="channel-links">
+                        <a href="index.html">Главная</a>
+                        <a href="index.html">Видео</a>
+                        <a href="#">Плейлисты</a>
+                        <a href="#">Подписки</a>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-wrapper">
+    <input type="checkbox" id="subscribe-toggle" hidden>
+    <label for="subscribe-toggle" class="subscribe-btn">
+        <span class="subscribe-text">Подписаться</span>
+        <span class="unsubscribe-text">Отписаться</span>
+    </label>
+</div>
+        </div>
+    </div>
+
+        <!-- видео -->
+        <a href="" class="video-card">
+                <div class="thumbnail">
+                    <img src="img\video\vid3.png">
+                    <span class="duration">23:32</span>
+                </div>
+                <div class="video-info">
+                    <div>
+                        <h3>Это Феррари? Нет, это Пежо 406!</h3>
+                        <p class="channel-name">HANSON</p>
+                        <p class="views">116 тыс. просмотров • 2 дня назад</p>
+                    </div>
+                </div>
+            </a>
+    </div>
+</main>
+     <script>
+        document.querySelector('.show-more').addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = this.closest('.menu-section');
+            section.classList.toggle('expanded');
+            this.textContent = section.classList.contains('expanded') ? '▲Свернуть' : '▼Развернуть';
+        });
+    </script>
 </body>
 </html>

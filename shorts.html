@@ -6,7 +6,6 @@
     <title>Zatup</title>
     <link rel="stylesheet" href="css\shorts.css">
     <link rel="icon" href="img\logos\logo.png">
-    <meta http-equiv="refresh" content="3">
 </head>
 <body>
     <!-- Шапка -->
@@ -20,7 +19,7 @@
         </div>
         <div class="header-right">
             <button class="create-btn">+ Создать</button>
-            <a href="#" class="user-avatar"><img src="img\logos\acc.png"></a>
+            <a href="acc.html" class="user-avatar"><img src="img\logos\acc.png"></a>
         </div>
     </header>
 
@@ -128,5 +127,13 @@
         </div>
     </div>
     </main>
+     <script>
+        document.querySelector('.show-more').addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = this.closest('.menu-section');
+            section.classList.toggle('expanded');
+            this.textContent = section.classList.contains('expanded') ? '▲Свернуть' : '▼Развернуть';
+        });
+    </script>
 </body>
 </html>
