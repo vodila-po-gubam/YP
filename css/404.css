@@ -1,0 +1,327 @@
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0f0f0f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.search-bar {
+    display: flex;
+    width: 40%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: #121212;
+    border: 1px solid #303030;
+    color: white;
+}
+
+.search-bar button {
+    background: #222;
+    border: 1px solid #303030;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.create-btn {
+    background: transparent;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: .7s;
+}
+.create-btn:hover{
+    background-color: #303030;
+}
+.user-avatar img {
+    width: 32px;
+    border-radius: 50%;
+}
+.header-icon {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.header-icon img {
+    width: 24px;
+    filter: invert(1);
+}
+
+.user-menu {
+    position: relative;
+    margin-left: 10px;
+}
+
+.user-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #282828;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.user-menu:hover .user-dropdown {
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 10px;
+}
+
+.dropdown-avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.user-dropdown a:hover {
+    background: #404040;
+}
+
+.user-dropdown img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.dropdown-footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #404040;
+    display: flex;
+    gap: 15px;
+}
+
+.dropdown-footer a {
+    font-size: 12px;
+    color: #aaa;
+    padding: 0;
+}
+
+/* Сайдбар */
+.sidebar {
+    width: 240px;
+    background: #0f0f0f;
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 1rem 0;
+    scrollbar-width: thin; 
+    scrollbar-color: #606060 transparent;
+}
+
+.menu-section {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #303030;
+    margin-bottom: 1rem;
+}
+
+.menu-section h4 {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.main-menu a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.main-menu a.active {
+    background: #303030;
+    border-radius: 5px;
+}
+
+.main-menu a:hover {
+    background: #272727;
+}
+
+.main-menu img {
+    width: 20px;
+}
+
+.show-more {
+    color: #3ea6ff !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.sidebar-footer {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+    color: #717171;
+}
+
+.sidebar-footer a {
+    display: block;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+.hidden-channels {
+    display: none; 
+    transition: all 0.7s;
+}
+
+.menu-section.expanded .hidden-channels {
+    display: block; 
+}
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            margin-left: 240px;
+            color: white;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #cc0000;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .error-description {
+            font-size: 16px;
+            color: #aaa;
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .error-btn {
+            background: #272727;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .error-btn:hover {
+            background: #3d3d3d;
+            transform: translateY(-2px);
+        }
+
+        .error-btn:active {
+            transform: translateY(1px);
+        }
+
+        .error-btn-primary {
+            background: #cc0000;
+        }
+
+        .error-btn-primary:hover {
+            background: #ff0000;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Адаптация для мобильных */
+        @media (max-width: 768px) {
+            .error-container {
+                margin-left: 0;
+            }
+            
+            .error-code {
+                font-size: 80px;
+            }
+            
+            .error-message {
+                font-size: 20px;
+            }
+        }

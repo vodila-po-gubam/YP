@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zatup</title>
+    <link rel="stylesheet" href="css\video.css">
+    <link rel="icon" href="img/logos/logo.png">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo"><img src="img/logos/logo.png"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+            <button>🔎</button>
+        </div>
+        <div class="header-right">
+            <button class="create-btn">+ Создать</button>
+            <a href="acc.html" class="user-avatar"><img src="img/logos/acc.png"></a>
+        </div>
+    </header>
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+        <nav class="main-menu">
+            <div class="menu-section">
+                <a href="index.html"><img src="img/sidebaer/glavn.png" alt=""> Главная</a>
+                <a href="shorts.html"><img src="img/sidebaer/sh.png" alt=""> Shorts</a>
+                <a href="#"><img src="img/sidebaer/podpiski.png" alt=""> Подписки</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Вы ></h4>
+                <a href="#"><img src="img/sidebaer/hist.png" alt=""> История</a>
+                <a href="#"><img src="img/sidebaer/playlist.png" alt=""> Плейлисты</a>
+                <a href="#"><img src="img/sidebaer/vashi video.png" alt=""> Ваши видео</a>
+                <a href="#"><img src="img/sidebaer/pozje.png" alt=""> Смотреть позже</a>
+                <a href="#"><img src="img/sidebaer/liked.png" alt=""> Понравившиеся</a>
+                <a href="#"><img src="img/sidebaer/yourclips.png" alt=""> Ваши клипы</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Подписки</h4>
+                <a href="#"><img src="img/sidebaer/wolf.png" alt=""> Happy Wolf!</a>
+                <a href="#"><img src="img/sidebaer/exile.png" alt=""> ExileShow</a>
+                <a href="#"><img src="img/sidebaer/guzno.png" alt=""> GUZNO</a>
+                <a href="#"><img src="img/sidebaer/vova.png" alt=""> Красюков Вова</a>
+                <a href="#"><img src="img/sidebaer/pala4.png" alt=""> PALA4</a>
+                <a href="#"><img src="img/sidebaer/nn.png" alt="">Konstantin Andreev</a>
+                <a href="#"><img src="img/sidebaer/nn.png" alt=""> Kwin</a>
+
+                <div class="hidden-channels">
+                    <a href="#"><img src="img/sidebaer/nn.png" alt=""> Stint</a>
+                    <a href="#"><img src="img/sidebaer/nn.png" alt=""> Satir</a>
+                    <a href="#"><img src="img/sidebaer/nn.png" alt=""> Itpedia</a>
+                </div>
+
+                <a href="#" class="show-more">▼Развернуть</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Навигатор</h4>
+                <a href="#"><img src="img/sidebaer/trend.png" alt=""> В тренде</a>
+                <a href="#"><img src="img/sidebaer/muz.png" alt=""> Музыка</a>
+                <a href="#"><img src="img/sidebaer/films.png" alt=""> Фильмы</a>
+                <a href="#"><img src="img/sidebaer/strims.png" alt=""> Трансляции</a>
+                <a href="#"><img src="img/sidebaer/gameds.png" alt=""> Видеоигры</a>
+                <a href="#"><img src="img/sidebaer/sport.png" alt=""> Спорт</a>
+            </div>
+
+            <div class="menu-section">
+                <a href=""><img src="img/sidebaer/settings.png">Настройки</a>
+            </div>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="#">О сервисе</a>
+            <a href="#">Конфиденциальность</a>
+            <p>© 2025 Zatup</p>
+        </div>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="video-page">
+        <div class="video-container">
+            <div class="video-player">
+                <!-- HTML5 Video Player -->
+                <video controls poster="img/video/vid3-poster.jpg">
+                    <source src="videos\BMX KOSTYA ANDREEV BEST TRICK COMPILATION 2018.mp4" type="video/mp4">
+                </video>
+                
+                <h1 class="video-title">Это Феррари? Нет, это Пежо 406!</h1>
+                
+                <div class="video-actions">
+                    <div class="video-stats">
+                        <span>116 тыс. просмотров</span>
+                        <span>•</span>
+                        <span>2 дня назад</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="action-btn">
+                            <i>👍</i>
+                            <span>5.2K</span>
+                        </button>
+                        <button class="action-btn">
+                            <i>👎</i>
+                            <span>Не нравится</span>
+                        </button>
+                        <button class="action-btn">
+                            <i>📢</i>
+                            <span>Поделиться</span>
+                        </button>
+                        <button class="action-btn">
+                            <i>➕</i>
+                            <span>Сохранить</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="channel-info-small">
+                    <img src="img/logos/acc.png" class="channel-avatar-small">
+                    <div>
+                        <h3>KOSTYA andreev</h3>
+                        <p>429 тыс. подписчиков</p>
+                    </div>
+                    <div class="subscribe-wrapper">
+                <input type="checkbox" id="subscribe-toggle" hidden>
+                <label for="subscribe-toggle" class="subscribe-btn">
+                    <span class="subscribe-text">Подписаться</span>
+                    <span class="unsubscribe-text">Отписаться</span>
+                </label>
+            </div>
+                </div>
+                
+                <div class="video-description">
+                    <p>Закрытие по всем фронтам прямиком из моей ВК ленты! Сколько бенгеров в видео? Ответ в комменты!
+
+Стирает рулевую в пыль: Костя Андреев VK: https://vk.com/andreevkostya
+
+Огромное спасибо Антону Наливкову  за то, что заморочился, скачал и скомпоновал все трюки в один видос! 
+
+   / @blumchannelofficial  </p>
+                    <p>#BMX</p>
+                </div>
+            </div>
+            
+            <div class="recommended-videos">
+                <h3 class="recommended-title">Рекомендуемые</h3>
+                <div class="recommended-list">
+                    <a href="404.html" class="recommended-video">
+                        <img src="img/video/vid1.png" class="recommended-thumbnail">
+                        <div class="recommended-info">
+                            <h4>Что делают в тюрячке?</h4>
+                            <p>Happy Wolf!</p>
+                            <p>3,2 млн просмотров • 3 года назад</p>
+                        </div>
+                    </a>
+                    
+                    <a href="404.html" class="recommended-video">
+                        <img src="img/video/vid2.png" class="recommended-thumbnail">
+                        <div class="recommended-info">
+                            <h4>ВЫГУЛИВАЮ ЛЕОНА</h4>
+                            <p>Happy Wolf!</p>
+                            <p>3,2 млн. просмотров • 2 года назад</p>
+                        </div>
+                    </a>
+                    
+                    <a href="404.html" class="recommended-video">
+                        <img src="img/video/vid3.png" class="recommended-thumbnail">
+                        <div class="recommended-info">
+                            <h4>Это Феррари? Нет, это Пежо 406!</h4>
+                            <p>HANSON</p>
+                            <p>116 тыс. просмотров • 2 дня назад</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.querySelector('.show-more').addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = this.closest('.menu-section');
+            section.classList.toggle('expanded');
+            this.textContent = section.classList.contains('expanded') ? '▲Свернуть' : '▼Развернуть';
+        });
+    </script>
+</body>
+</html>
