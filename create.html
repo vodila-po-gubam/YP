@@ -1,11 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zatup</title>
+    <link rel="stylesheet" href="css\create.css">
+    <link rel="icon" href="img\logos\logo.png">
 </head>
 <body>
+
+    <header>
+        <div class="header-left">
+            <a href="index.html" class="logo"><img src="img\logos\logo.png"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+            <button>🔎</button>
+        </div>
+        <div class="header-right">
+            <button class="create-btn"><a href="create.html">+Создать</a></button>
+            <a href="acc.html" class="user-avatar"><img src="img\logos\acc.png"></a>
+        </div>
+    </header>
+
+
+    <aside class="sidebar">
+        <nav class="main-menu">
+            <div class="menu-section">
+                <a href="" class="active"><img src="img\sidebaer\glavn.png" alt=""> Главная</a>
+                <a href="shorts.html"><img src="img\sidebaer\sh.png" alt=""> Shorts</a>
+                <a href="#"><img src="img\sidebaer\podpiski.png" alt=""> Подписки</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Вы ></h4>
+                <a href="#"><img src="img\sidebaer\hist.png" alt=""> История</a>
+                <a href="#"><img src="img\sidebaer\playlist.png" alt=""> Плейлисты</a>
+                <a href="acc.html"><img src="img\sidebaer\vashi video.png" alt=""> Ваши видео</a>
+                <a href="#"><img src="img\sidebaer\pozje.png" alt=""> Смотреть позже</a>
+                <a href="#"><img src="img\sidebaer\liked.png" alt=""> Понравившиеся</a>
+                <a href="#"><img src="img\sidebaer\yourclips.png" alt=""> Ваши клипы</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Подписки</h4>
+                <a href="#"><img src="img\sidebaer\wolf.png" alt=""> Happy Wolf!</a>
+                <a href="#"><img src="img\sidebaer\exile.png" alt=""> ExileShow</a>
+                <a href="#"><img src="img\sidebaer\guzno.png" alt=""> GUZNO</a>
+                <a href="#"><img src="img\sidebaer\vova.png" alt=""> Красюков Вова</a>
+                <a href="#"><img src="img\sidebaer\pala4.png" alt=""> PALA4</a>
+                <a href="#"><img src="img\sidebaer\nn.png" alt="">Konstantin Andreev</a>
+                <a href="#"><img src="img\sidebaer\nn.png" alt=""> Kwin</a>
+
+                   <!-- Скрытые каналы -->
+                <div class="hidden-channels">
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Stint</a>
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Satir</a>
+                    <a href="#"><img src="img\sidebaer\nn.png" alt=""> Itpedia</a>
+                </div>
+
+                <a href="#" class="show-more">▼Развернуть</a>
+            </div>
+            
+            <div class="menu-section">
+                <h4>Навигатор</h4>
+                <a href="#"><img src="img\sidebaer\trend.png" alt=""> В тренде</a>
+                <a href="#"><img src="img\sidebaer\muz.png" alt=""> Музыка</a>
+                <a href="#"><img src="img\sidebaer\films.png" alt=""> Фильмы</a>
+                <a href="#"><img src="img\sidebaer\strims.png" alt=""> Трансляции</a>
+                <a href="#"><img src="img\sidebaer\gameds.png" alt=""> Видеоигры</a>
+                <a href="#"><img src="img\sidebaer\sport.png" alt=""> Спорт</a>
+            </div>
+
+            <div class="menu-section">
+                <a href=""><img src="img\sidebaer\settings.png">Настройки</a>
+            </div>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="#">О сервисе</a>
+            <a href="#">Конфиденциальность</a>
+            <p>© 2025 Zatup</p>
+        </div>
+    </aside>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="upload-page">
+        <div class="upload-container">
+            <h2>Загрузить видео</h2>
+            <div class="upload-area">
+    <form id="upload-form" class="upload-form">
+        <div class="upload-main">
+            <div class="thumbnail-section">
+                <input type="file" id="video-upload" accept="video/*" required hidden>
+                <label for="video-upload" class="thumbnail-preview">
+                    <div class="upload-hint">
+                        <svg viewBox="0 0 24 24" width="48" height="48" fill="#fff">
+                            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"></path>
+                        </svg>
+                        <p>Нажмите для загрузки видео</p>
+                        <span class="file-requirements">MP4, WebM или AVI. До 1GB</span>
+                    </div>
+                </label>
+                <span id="file-name" class="file-name">Файл не выбран</span>
+            </div>
+            
+            <div class="details-section">
+                <div class="form-group">
+                        <input type="text" id="video-title" placeholder="Название видео" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="video-description" placeholder="Описание"></textarea>
+                    </div>
+                    <button type="submit" class="publish-btn">Опубликовать</button>
+                </div>    
+            </div>
+        </div>
+    </form>
+</div>
+        </div>
+        <div class="upload-divider"></div>
+
+<div class="visibility-section">
+    <h3>Видимость</h3>
+    <div class="visibility-option">
+        <input type="radio" id="public" name="visibility" value="public" checked>
+        <label for="public">Публичный</label>
+    </div>
+    <p class="visibility-description">Видео смогут посмотреть все пользователи</p>
     
+    <div class="visibility-option">
+        <input type="radio" id="unlisted" name="visibility" value="unlisted">
+        <label for="unlisted">Доступ по ссылке</label>
+    </div>
+    <p class="visibility-description">Видео смогут посмотреть только те, у кого есть ссылка</p>
+    
+    <div class="visibility-option">
+        <input type="radio" id="private" name="visibility" value="private">
+        <label for="private">Приватный</label>
+    </div>
+    <p class="visibility-description">Видео сможете посмотреть только вы</p>
+</div>
+    </main>
+
+
+
+    <script>
+document.querySelector('.show-more').addEventListener('click', function() {
+    const section = this.closest('.menu-section');
+    section.classList.toggle('expanded');
+    this.textContent = section.classList.contains('expanded') ? '▲Свернуть' : '▼Развернуть';
+});
+
+
+    document.getElementById('video-upload').addEventListener('change', function(e) {
+        const fileName = document.getElementById('file-name');
+        if (this.files.length > 0) {
+            fileName.textContent = this.files[0].name;
+            
+            const file = this.files[0];
+            const video = document.createElement('video');
+            video.preload = 'metadata';
+            
+            video.onloadedmetadata = function() {
+                const canvas = document.createElement('canvas');
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                document.getElementById('thumbnail-preview').src = canvas.toDataURL();
+            };
+            
+            video.src = URL.createObjectURL(file);
+        } else {
+            fileName.textContent = 'Файл не выбран';
+        }
+    });
+
+    document.getElementById('upload-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Видео успешно загружено! (в реальном приложении здесь была бы отправка на сервер)');
+    });
+</script>
 </body>
 </html>

@@ -66,6 +66,11 @@ header {
     border-radius: 20px;
     transition: .7s;
 }
+.create-btn a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
 .create-btn:hover{
     background-color: #303030;
 }
@@ -375,6 +380,10 @@ main {
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
+}
+.channel-info-small a{
+    color: white;
+    text-decoration: none;
 }
 
 .channel-avatar-small {
